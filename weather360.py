@@ -6,7 +6,7 @@ def kelvin_to_fahrenheit(kelvin):
 
 def get_weather():
     city = entry.get()
-    api_key = '1d7a411f22fafc8458c9f886cc1d5afa' 
+    api_key = 'OPENWEATHERMAP_API' 
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response = requests.get(url)
     data = response.json()
